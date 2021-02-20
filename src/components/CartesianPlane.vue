@@ -28,9 +28,7 @@ export default {
     }, this.$el);
   },
   methods: {
-    preload(p) {
-
-    },
+    preload() {},
 
     setup(p) {
       p.createCanvas(this.size, this.size);
@@ -118,7 +116,7 @@ export default {
   }, // END methods
 
   watch: {
-    size(val, oldVal) {
+    size() {
       this.sketch.resizeCanvas(this.size, this.size);
     }
   }
